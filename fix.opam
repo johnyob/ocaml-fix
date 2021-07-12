@@ -1,0 +1,20 @@
+opam-version: "2.0"
+maintainer: "ajo41@cam.ac.uk"
+authors: ["Alistair O'Brien"]
+homepage: "https://github.com/johnyob/ocaml-fix"
+bug-reports: "https://github.com/johnyob/ocaml-fix/issues"
+dev-repo: "git+https://github.com/johnyob/ocaml-fix.git"
+depends: [ 
+  "ocaml" { >= "4.08.0" }
+  "dune" { >= "2.8" }
+  "base" { >= "v0.14.1" }
+  "ppx_deriving" { >= "4.5" }
+  "alcotest" {with-test}
+]
+license: "MIT"
+synopsis: "TODO"
+description: """
+TODO
+"""
+build: ["dune" "build" "-p" name "-j" jobs]
+run-test: ["dune" "runtest" "-p" name "-j" jobs]
