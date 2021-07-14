@@ -7,8 +7,6 @@ dev-repo: "git+https://github.com/johnyob/ocaml-fix.git"
 depends: [ 
   "ocaml" { >= "4.08.0" }
   "dune" { >= "2.8" }
-  "base" { >= "v0.14.1" }
-  "ppx_deriving" { >= "4.5" }
   "alcotest" {with-test}
 ]
 license: "MIT"
